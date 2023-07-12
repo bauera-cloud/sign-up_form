@@ -1,97 +1,130 @@
-@font-face {
-    font-family: 'Norse-Bold';
-    src: local('Norse-Bold'), url('/home/odinstudent/Downloads/Norse-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    height: 100vh
-}
+  @font-face {
+      font-family: 'Norse-Bold';
+      src: local('Norse-Bold'), url('/home/odinstudent/Downloads/Norse-Bold.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+  }
 
-.background-image {
-    background-image: url('/images/viking-boat.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex: .93;
-    margin: 0;
-}
+  body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      height: 100vh
+  }
 
-.odin-transparent-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30px;
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 34%;
-    height: 150px;
-}
+  .background-image {
+      background-image: url('/images/viking-boat.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      flex: .93;
+      margin: 0;
+  }
 
-.odin-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  .odin-transparent-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0px;
+      background-color: rgba(0, 0, 0, 0.342);
+      width: 34%;
+      height: 150px;
+  }
 
-.odin-logo img {
-    margin: 0px;
-    height: 145px;
-}
+  .odin-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
-.odin-transparent-background h1 {
-    font-family: 'Norse-Bold';
-    font-weight: lighter;
-    font-size: 6rem;
-    color: white;
-}
+  .odin-logo img {
+      margin: 0px;
+      height: 145px;
+  }
 
-.background-image .credit {
-    position: absolute;
-    bottom: 5px;
-    left: 200px;
-    font-size: .9rem;
-    color: white;
-    text-align: center;
-}
+  .odin-transparent-background h1 {
+      font-family: 'Norse-Bold';
+      font-weight: lighter;
+      font-size: 6rem;
+      color: white;
+  }
 
-.credit a {
-    color: white
-}
+  .background-image .credit {
+      position: absolute;
+      bottom: 5px;
+      left: 200px;
+      font-size: .9rem;
+      color: white;
+      text-align: center;
+  }
 
-.service_page {
-    display: flex;
-    flex-direction: column;
-    flex: 1.8;
-}
+  .credit a {
+      color: white
+  }
 
-.service_page>div {
-    width: 100%;
-    flex: 1;
-    margin: 0;
-}
+  .service_page {
+      display: flex;
+      flex-direction: column;
+      flex: 1.8;
+  }
 
-.introduction {
-    font-weight: bolder;
-    padding: 9em 7em .5em 2em;
-    font-size: 20px;
-}
+  .service_page>div {
+      width: 100%;
+      flex: 1;
+      margin: 0;
+  }
 
-.introduction p {
-    width: 60%;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
+  .introduction {
+      font-weight: bolder;
+      padding: 6.5em 7em .5em 2em;
+      font-size: 30px;
+  }
 
-.form {
-    padding: .5em 1em;
+  .introduction p {
+      width: 70%;
+      font-size: 1.4rem;
+      font-weight: 600;
+  }
 
-}
+  .form {
+      padding: .2em 2em 3em;
+  }
 
-.introduction,
-.account-footer {
-    background-color: rgb(243, 243, 243);
-}
+  form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 0 25px;
+      font-size: .9rem;
+  }
+
+  .form-row {
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      width: 60%;
+  }
+
+  .form-row div {
+      display: flex;
+      flex-direction: column;
+  }
+
+  label {
+      letter-spacing: .08rem;
+  }
+
+  input {
+      appearance: none;
+      border: 1px solid rgba(223, 223, 223, 0.952);
+      border-radius: 5%;
+      font-size: 1rem;
+  }
+
+  .introduction,
+  .account-footer {
+      background-color: rgb(247, 247, 247);
+  }

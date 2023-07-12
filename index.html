@@ -32,9 +32,42 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
-            <h2>Let's do this!</h2>
-            <form action="">
-
+            <form action="" method="post">
+                <h2>Let's do this!</h2>
+                <div class="form-row">
+                    <div id="first-name">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]+">
+                    </div>
+                    <div id="last-name">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div id="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div id="phone-number">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="ex: 727-123-4567"
+                            pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div id="password">
+                        <label for="password">PASSWORD</label>
+                        <!-- validation pattern: UpperCase, LowerCase, Number/SpecialChar and min 8 chars -->
+                        <input type="password" name="password" id="password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    </div>
+                    <div id="comfirm-password">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password"
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                    </div>
+                </div>
             </form>
         </div>
         <div class="account-footer">content3</div>
