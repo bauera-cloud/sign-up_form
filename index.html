@@ -32,7 +32,7 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
-            <form action="" method="post">
+            <form action="" method="post" id="sign-up-form">
                 <h2>Let's do this!</h2>
                 <div class="form-row">
                     <div id="first-name">
@@ -47,7 +47,7 @@
                 <div class="form-row">
                     <div id="email">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="sample@gmail.com">
                     </div>
                     <div id="phone-number">
                         <label for="phone-number">PHONE NUMBER</label>
@@ -70,8 +70,23 @@
                 </div>
             </form>
         </div>
-        <div class="account-footer">content3</div>
+        <div class="account-footer">
+            <input type="submit" form="sign-up-form" value="Create Account" id="create-account-button">
+            <p>Already have an account? <a href="" id="log-in">Log In</a></p>
+        </div>
     </div>
 </body>
 
 </html>
+
+
+<!-- validation error messages:
+    Name is required
+    The email field must be a valid email
+    Phone number is required
+    The password field must be at least 3 characters
+ -->
+
+<!-- validation positive feedback:
+    Add a checkmark
+  -->

@@ -7,6 +7,10 @@
       font-style: normal;
   }
 
+  :root {
+      --color-login-text: #3F2305;
+  }
+
   body {
       font-family: 'Roboto', sans-serif;
       display: flex;
@@ -31,7 +35,7 @@
       top: 0px;
       background-color: rgba(0, 0, 0, 0.342);
       width: 34%;
-      height: 150px;
+      height: 125px;
   }
 
   .odin-logo {
@@ -42,13 +46,13 @@
 
   .odin-logo img {
       margin: 0px;
-      height: 145px;
+      height: 100px;
   }
 
   .odin-transparent-background h1 {
       font-family: 'Norse-Bold';
       font-weight: lighter;
-      font-size: 6rem;
+      font-size: 4rem;
       color: white;
   }
 
@@ -115,6 +119,7 @@
 
   label {
       letter-spacing: .08rem;
+      font-size: .9rem;
   }
 
   input {
@@ -122,6 +127,28 @@
       border: 1px solid rgba(223, 223, 223, 0.952);
       border-radius: 5%;
       font-size: 1rem;
+  }
+
+  .account-footer {
+      padding: 1.75em 3em;
+  }
+
+
+  #create-account-button {
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 10px 40px;
+      border-radius: 7.5%;
+      background-color: #3F2305;
+      color: whitesmoke;
+      margin-bottom: .5em;
+      box-shadow: 2px 4px 2px .1px rgb(175, 175, 175);
+  }
+
+  #log-in {
+      text-decoration: none;
+      color: var(--color-login-text);
+      font-weight: bold;
   }
 
   .introduction,
