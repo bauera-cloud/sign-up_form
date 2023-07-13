@@ -26,7 +26,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-image: url('/images/viking-boat.jpg');
+      background-image: url('./viking-boat.jpg');
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
