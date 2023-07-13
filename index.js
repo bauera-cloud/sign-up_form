@@ -1,7 +1,7 @@
-let firstName = document.querySelector('#first-name');
+let firstName = document.querySelector("input[id='first-name'");
 let firstNameErrorMessage = document.querySelector('#name-error-message');
 
-let phoneNumber = document.querySelector('#phone-number')
+let phoneNumber = document.querySelector("input[id='phone-number'");
 let phoneNumberErrorMessage = document.querySelector('#phone-number-error-message');
 
 //reveals error message
@@ -12,8 +12,21 @@ firstName.addEventListener('change', (e) => {
     }
 })
 
+firstName.addEventListener('focus', (e) => {
+    if (firstNameErrorMessage.checkVisibility() === true) {
+        firstNameErrorMessage.style.visibility = 'hidden';
+    }
+})
+
+
 phoneNumber.addEventListener('change', (e) => {
     if (!/\d{3}[\-]\d{3}[\-]\d{4}/.test(e.target.value)) {
         phoneNumberErrorMessage.style.visibility = 'visible';
+    }
+})
+
+phoneNumber.addEventListener('focus', (e) => {
+    if (phoneNumberErrorMessage.checkVisibility() === true) {
+        phoneNumberErrorMessage.style.visibility = 'hidden';
     }
 })
