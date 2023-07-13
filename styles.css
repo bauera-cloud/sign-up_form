@@ -13,29 +13,35 @@
 
   body {
       font-family: 'Roboto', sans-serif;
-      display: flex;
-      flex-direction: row;
       margin: 0;
-      height: 100vh
+      padding: 0;
+  }
+
+  main {
+      display: flex;
+      min-height: 100vh;
   }
 
   .background-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-image: url('/images/viking-boat.jpg');
-      background-size: contain;
+      background-position: center center;
+      background-size: cover;
       background-repeat: no-repeat;
       flex: .93;
       margin: 0;
+      min-width: 400px;
   }
 
   .odin-transparent-background {
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      top: 0px;
       background-color: rgba(0, 0, 0, 0.342);
-      width: 34%;
-      height: 125px;
+      width: 100%;
+      height: 13%;
   }
 
   .odin-logo {
@@ -57,9 +63,6 @@
   }
 
   .background-image .credit {
-      position: absolute;
-      bottom: 5px;
-      left: 200px;
       font-size: .9rem;
       color: white;
       text-align: center;
@@ -76,14 +79,13 @@
   }
 
   .service_page>div {
-      width: 100%;
       flex: 1;
       margin: 0;
   }
 
   .introduction {
       font-weight: bolder;
-      padding: 4em 7em 0em 2em;
+      padding: 4em 0em 0em 2em;
       font-size: 30px;
   }
 
@@ -94,15 +96,14 @@
   }
 
   .form {
-      padding: .2em 2em 3em;
+      padding: .2em 0 .2em 3em;
   }
 
   form {
-      height: 300px;
       display: flex;
       flex-direction: column;
       gap: 25px;
-      padding: 0 25px;
+      padding: 0 25px 25px 25px;
       font-size: .9rem;
   }
 
@@ -125,22 +126,31 @@
 
   input {
       appearance: none;
-      border: 1px solid rgba(223, 223, 223, 0.952);
+      border: 1px solid #E5E7EB;
       border-radius: 5%;
       font-size: 1.2rem;
   }
 
   input:focus {
       outline: none;
+      border: 1px solid blue;
+      box-shadow: 2px 2px 3px .1px rgb(175, 175, 175);
+  }
+
+  #phone-number::placeholder {
+      font-size: .98rem;
   }
 
   /* input:valid {
-      border-color: rgb(247, 247, 247);
+      border-color: green;
   } */
 
-  .error-message {
+  #phone-number-error-message,
+  #name-error-message {
+      visibility: hidden;
       display: flex;
       flex-direction: row;
+      align-items: center;
       color: red;
   }
 
@@ -153,11 +163,12 @@
   }
 
   .account-footer {
-      padding: 1.75em 3em;
+      padding: 1.75em 0em 1.75em 3em;
   }
 
 
   #create-account-button {
+      border: none;
       font-weight: 700;
       font-size: 1.3rem;
       padding: 10px 40px;
