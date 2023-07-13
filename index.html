@@ -44,7 +44,7 @@
                         <div id="first-name">
                             <label for="first-name">FIRST NAME</label>
                             <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]+" required
-                                minlength="3" maxlength="15">
+                                minlength="2" maxlength="15">
                             <div class="error-message" id="name-error-message">
                                 <i class="material-symbols-outlined" id="warning-icon">warning</i>
                                 <span>Name is required</span>
@@ -53,7 +53,11 @@
                         <div id="last-name">
                             <label for="last-name">LAST NAME</label>
                             <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+" required
-                                minlength="3" maxlength="15">
+                                minlength="2" maxlength="15">
+                            <div class="error-message" id="last-name-error-message">
+                                <i class="material-symbols-outlined" id="warning-icon">warning</i>
+                                <span>Last name is required</span>
+                            </div>
                         </div>
                     </div>
                     <div class="form-row">
@@ -77,10 +81,14 @@
                             <!-- validation pattern: UpperCase, LowerCase, Number/SpecialChar and min 8 chars -->
                             <input type="password" name="password" id="password"
                                 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <div class="error-message" id="password-error-message">
+                                <i class="material-symbols-outlined" id="warning-icon">warning</i>
+                                <span>Password is required</span>
+                            </div>
                         </div>
                         <div id="comfirm-password">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-password"
+                            <input type="password" name="confirm-password" id="confirm-password" required
                                 pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                         </div>
                     </div>

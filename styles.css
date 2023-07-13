@@ -141,12 +141,10 @@
       font-size: .98rem;
   }
 
-  /* input:valid {
-      border-color: green;
-  } */
-
+  #name-error-message,
+  #password-error-message,
   #phone-number-error-message,
-  #name-error-message {
+  #last-name-error-message {
       visibility: hidden;
       display: flex;
       flex-direction: row;
